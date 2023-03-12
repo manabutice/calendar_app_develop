@@ -1,0 +1,54 @@
+/* style.css */
+/* 日付 */
+.simple-calendar td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* 日付が今日の場合の背景色 */
+.simple-calendar td.today {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* イベントの表示 */
+.simple-calendar td .event {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+
+/* カレンダーの見出し */
+.calendar-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content {
+  font-size: 16px;
+}
+
+.submit {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
