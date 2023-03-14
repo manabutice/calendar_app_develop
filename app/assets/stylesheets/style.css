@@ -8,7 +8,7 @@
 
 /* 日付が今日の場合の背景色 */
 .simple-calendar td.today {
-  background-color: #007bff;
+  background-color: #ffbb00;
   color: #fff;
 }
 
@@ -44,11 +44,11 @@
   font-size: 16px;
 }
 
-.submit {
+/* .submit {
   margin-top: 20px;
   background-color: #007bff;
-  color: #fff;
+  color: #ffffff;
   border: none;
-  padding: 10px 20px;
+  padding: 1px 20px;
   border-radius: 5px;
-}
+} */

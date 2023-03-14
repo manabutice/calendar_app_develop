@@ -19,7 +19,7 @@
     <% @blogs.each do |blog| %>
       <tr>
         <td><%= link_to blog.title , blog %></td>
-        <td><%= blog.start_time.strftime("%m-%d") %></td>
+        <td><%= blog.start_time.strftime("%m-%d") if blog.start_time %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,10 +30,23 @@
 <%= form_with(model: @blog, local: true) do |form| %>
 
   <div class="title">
-    <div class="form-tag">タイトル</div>
-    <%= form.text_field :title %>
-  </div>
+  <div class="form-tag">タイトル</div>
+  <%= form.text_field :title, id: "title-input" %>
+  <label>
+    時刻
+    <input type="time" name="time" id="time-input">
+  </label>
+</div>
 
+<script>
+  const timeInput = document.getElementById('time-input');
+  const titleInput = document.getElementById('title-input');
+
+  timeInput.addEventListener('change', () => {
+    const selectedTime = timeInput.value;
+    titleInput.value = `(${selectedTime}) ${titleInput.value}`;
+  });
+</script>
 
   <div class="content">
     <div class="form-tag">内容</div>
