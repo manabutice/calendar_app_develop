@@ -15,6 +15,7 @@ gem 'tzinfo-data'
 
 gem 'sassc', '~> 2.0.1'
 
+gem 'bootstrap', '~> 5.0.0'
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
